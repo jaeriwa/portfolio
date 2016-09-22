@@ -1,0 +1,277 @@
+@charset "UTF-8";
+body {
+	background: url('images/background.jpg');
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family: sans-serif;
+	font-size: 0.9em;
+}
+
+a	{
+	color:#808080;
+	text-decoration: none;
+	}
+	
+#grey
+	{
+	width:100%;
+	background-color: #fff;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+	min-height: 30px;
+	}
+
+#grey a:hover
+	{
+	font-style: italic;
+	}
+
+.nav
+	{
+	max-width: 960px;
+	width: 96%;
+	margin: 0px auto;
+	}
+ul	{ 
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: center; 
+	}
+li	{
+	height: 40px;
+	width: 19%;
+	display: inline;
+	float: left;
+	padding: 6% 1% 1% 0%;
+	text-align: center;
+	background-color: #fff;
+	}
+li:hover
+	{
+	background-color:#fafafa;
+	}
+
+#button
+ 	{
+ 	display: none;
+ 	}
+
+#container
+	{
+	max-width: 960px;
+	width: 96%;
+	margin: 50px auto;
+	}
+#header	{
+	margin: 100px 0% 50px;
+	}
+h1	{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 50px 0% 0%;
+	color: #3f3f3f;
+	}
+.name
+	{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+	font-style: italic;
+	color: #3f3f3f;
+	}
+h2,h3,h4, h5 {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 0.9em;
+	letter-spacing: 2px;
+	color: #c4c0af;
+	text-transform: uppercase;
+	}
+h2	{
+	margin: 50px 0% 50px;
+	}
+h3, h4	{
+	margin: 50px 0% 25px;
+	text-align: left;
+	}
+h4	{
+	text-align: center;
+	}
+h5	{
+	margin: 10px 0% 5px;
+	color: #c4c0af;
+	padding: 3px 2px;
+	font-size: 1.2em;
+	}
+.und{
+	border-bottom: 2px solid #b6b6b6;
+	padding-bottom: 4px;
+	}
+#content, #dev, #design, #illust, #contact, #footer
+	{
+	font-family: sans-serif;
+	font-size: 0.9em;
+	}
+#content p, #dev p, #design p, #illust p, #contact p
+	{
+	text-align: left;
+	margin: 25px 0% 25px;
+	line-height: 1.9em;
+	}
+#contact img
+	{
+	float: left;
+	margin: 10px;
+	}
+
+#dev, #design, #illus {
+	clear: both;
+	margin: 4em 0% 0%;
+	}
+#footer
+	{
+	margin: 20px;
+	}
+.swan
+	{
+	float: right;
+	max-width: 100%;
+    	height: auto;
+	}
+.work
+	{
+	max-width: 100%;
+    	height: auto;
+    	margin-top: 25px;
+	}
+.click
+	{
+	border: solid 1px #CCC;
+	cursor: pointer;
+	letter-spacing: 2px;
+	font-size: 14px;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+  	display: inline-block;
+  	padding: 10px 15px;
+	}
+.top	{
+	margin-top: 30px;
+	border: 0px;
+	}
+a:hover
+	{
+	color: #c4c0af;
+	}
+
+.thumbs /* styling for the thumbnails */
+	{
+	margin: 1%;
+	border: 1px solid #eaeaea;
+	cursor: pointer;
+	}
+
+.illustration  /* class for the hovering image gallery */
+	{
+	z-index: 2;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow: auto; /* fallback to scroll if img height & descrip is too much */
+    	background-color: rgb(0,0,0); /* if opacity cannot work */
+    	background-color: rgba(0,0,0,0.4); 
+    	width: 100%;
+    	height: 100%;
+    	color:#808080;
+    	padding: 10px;
+	}
+
+.illustimg  /* make sure full width of image does not exceed page width */
+	{
+	max-width: 90%;
+	height: auto;
+	margin: 10px 0px;;
+	}
+.illust-content {
+	padding: 10px 3px;
+	margin-left: auto;
+	margin-right: auto;
+    	background-color: #fff;
+    	margin-bottom: 20px;
+	max-width: 90%;
+	}
+h6	{
+	font-size: 0.9em;
+	font-weight: normal;
+	margin: 10px 0px 10px;
+	}
+	
+.exit {
+	border: 0;
+	padding-bottom: 3px;
+	cursor: pointer;
+	}
+.glasses
+	{
+	margin: 50px;
+	}
+
+@media (max-width: 750px) {
+.swan {
+	max-width: 60%;
+	}
+}
+
+@media (max-width: 650px){
+h1 {
+	margin-top: 2em;
+	}
+
+#header	{
+	margin: 5em 0% 4em;
+	}
+.swan
+	{
+	clear: both;
+	float: none;
+	margin: 0 auto 3em;
+	max-width: 80%;
+	}
+}
+
+@media (max-width: 450px) {
+h2	{
+	font-size: 0.8em;
+	}
+#gray {
+	position: fixed;
+	z-index:1;
+	top: 0;
+	}
+#button
+ 	{
+ 	display: block;
+ 	position: absolute;
+ 	right: 10px;
+ 	top: 6px;
+ 	cursor: pointer;
+ 	}
+li {
+	float: left;
+	clear: left;
+	width: 100%;
+	height: 1.5em;
+	padding: 0.5em;
+	}
+#invisible
+	{
+	display: none;
+	}
+.swan
+	{
+	max-width: 79%;
+	}
+}
